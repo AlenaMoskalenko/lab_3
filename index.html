@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Лабораторна робота - Завдання 3</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    table {
+      border-collapse: collapse;
+      margin-bottom: 25px;
+      min-width: 400px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 6px 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .delete-btn {
+      color: red;
+      cursor: pointer;
+      font-weight: bold;
+      text-align: center;
+      user-select: none;
+    }
+    .editable {
+      cursor: pointer;
+    }
+    .editable:hover {
+      background-color: #f9f9e0;
+    }
+    .hint {
+      font-size: 13px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>1. Таблиця категорій</h2>
+  <p class="hint">Підказка: клікніть на назву для редагування. Категорії "Електроніка" та "Книги" прив'язані до товарів і не видаляться.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Назва категорії (клік для зміни)</th>
+        <th>Видалити</th>
+      </tr>
+    </thead>
+    <tbody id="categoriesBody"></tbody>
+  </table>
+
+  <h2>2. Таблиця товарів</h2>
+  <p class="hint">Підказка: клікніть на назву товару для редагування.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Назва товару (клік для зміни)</th>
+        <th>ID Категорії</th>
+        <th>Видалити</th>
+      </tr>
+    </thead>
+    <tbody id="productsBody"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
